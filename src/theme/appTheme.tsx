@@ -1,6 +1,13 @@
 import { StyleSheet } from "react-native";
 
-export const styles = StyleSheet.create({
+export const estilos = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: 'gray',  // Fondo gris
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 16,
+    },
     button: {
         backgroundColor: 'lightblue',
         paddingVertical: 15,

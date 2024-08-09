@@ -4,6 +4,7 @@ import { ButtonComponent } from '../components/ButtonComponent';
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { RootStackParamList } from '../navigator/StackNavigator';
+import { estilos } from '../theme/appTheme';
 
 // Tipar el objeto de navegación para la pantalla actual
 type InicioScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Inicio'>;
@@ -12,7 +13,7 @@ export const Inicio = () => {
   const navigation = useNavigation<InicioScreenNavigationProp>();
 
   return (
-    <View>
+    <View style={estilos.container}>
       <ButtonComponent 
         textButton='Imagen1' 
         actionButton={() => navigation.navigate('Imagen1')} 
