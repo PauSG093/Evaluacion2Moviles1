@@ -22,11 +22,11 @@ const Stack = createStackNavigator<RootStackParamList>();
 export const StackNavigator = () => {
     return (
         <Stack.Navigator>
-            <Stack.Screen name="Inicio" options={{ title: 'Pantalla5Screen' }} component={Inicio} />
-            <Stack.Screen name="Imagen1" options={{ title: 'Home' }} component={Imagen1} />
-            <Stack.Screen name="Imagen2" options={{ title: 'Pantalla Secundaria' }} component={Imagen2} />
-            <Stack.Screen name="Mayorque" options={{ title: 'Pantalla Final' }} component={Mayorque} />
-            <Stack.Screen name="Menorque" options={{ title: 'Persona' }} component={Menorque} />
+            <Stack.Screen name="Inicio" options={{ title: 'Menu' }} component={Inicio} />
+            <Stack.Screen name="Imagen1" options={{ title: 'Imagen1' }} component={Imagen1} />
+            <Stack.Screen name="Imagen2" options={{ title: 'Imagen2' }} component={Imagen2} />
+            <Stack.Screen name="Mayorque" options={{ title: 'Mayor que' }} component={Mayorque} />
+            <Stack.Screen name="Menorque" options={{ title: 'Menor que' }} component={Menorque} />
         </Stack.Navigator>
     );
 }
